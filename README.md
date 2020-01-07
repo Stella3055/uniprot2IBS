@@ -17,7 +17,7 @@ cd uniprot2IBS
 or simply download the project .zip archive and uncompress
 
 ### Downloading .xml metadata from Uniprot
-![fig1](.\assert\fig1.png)
+![fig1](https://github.com/Stella3055/uniprot2IBS/raw/master/assert/fig1.png)
 
 ### Extract structure info
 ```shell
@@ -129,8 +129,8 @@ ESR1.xmlinfo.tsv.ibs.xml will be generated
 
 Open IBS-->Protein Mode-->File-->Open Project-->select ESR1.xml.info.tsv.ibs.xml
 
-![fig2](D:\Git\uniprot2IBS\assert\fig2.png)
+![fig2](https://github.com/Stella3055/uniprot2IBS/raw/master/assert/fig2.png)
 
 then edit it
 
-![fig3](D:\Git\uniprot2IBS\assert\fig3.png)
+![fig3](https://github.com/Stella3055/uniprot2IBS/raw/master/assert/fig3.png)
