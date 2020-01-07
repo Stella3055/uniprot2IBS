@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="IBS 1.0" mode="protein" width="800" height="600" rate="1.0">
+  <protein vertical="0" horizontal="0" locked="true">
+    <dash>1</dash>
+    <id>{{chain.name}}</id>
+    <start direction="Down">{{chain.start}}</start>
+    <end direction="Down">{{chain.end}}</end>
+    <height size="12" color="128,128,128" colorline="0,0,0">25</height>
+    <dash>false</dash>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <textfont />
+    {%-for item in chain.components%}
+        {{item}}
+    {%-endfor%}}
+  </protein>
+</project>

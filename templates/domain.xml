@@ -1,0 +1,16 @@
+<component type="domain">
+    <start direction="Up">{{domain.start}}</start>
+    <end direction="Up">{{domain.end}}</end>
+    <name direction="Down" size="12" color="153,0,51" colortext="0,0,0" colorline="0,0,0">{{domain.name}}</name>
+    <high>10</high>
+    <shapetype>Rectangle</shapetype>
+    <strokesize>1</strokesize>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <rotationAngle>0</rotationAngle>
+    <dash>false</dash>
+    <leftdash>false</leftdash>
+    <rightdash>false</rightdash>
+    <id>{{domain.id}}</id>
+    <textfont />
+</component>
