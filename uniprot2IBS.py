@@ -2,6 +2,7 @@ import jinja2
 import pandas as pd
 import xml.etree.ElementTree as et
 from collections import OrderedDict
+import sys
 
 class uniprot2Info(object):
     def __init__(self, pathToUniprotXml):
@@ -45,7 +46,7 @@ class uniprot2Info(object):
         # for feature in featureList:
         #     print("\t".join(feature))
 
-        with open(self.inPath+"info.tsv", "w") as output:
+        with open(self.inPath+".info.tsv", "w") as output:
             output.write(header+"\n")
             for feature in featureList:
                 output.write("\t".join(feature)+"\n")
@@ -115,7 +116,15 @@ class info2IbsProj(object):
         return
 
 if __name__ == "__main__":
-    pathToUniprotXml = "./ESR1.xml"
-    pathToInfo = "./ESR1.xmlinfo.tsv"
-    # uniprot2IBS_test = uniprot2Info(pathToUniprotXml)
-    info2IbsProj_test = info2IbsProj(pathToInfo)
+    if len(sys.argv) == 1:
+        print("Useage:\t\tuniprot2IBS [command] [filename]\nCommands:\n- parse:\textract protein metadata into .tsv file\n- construct:\tconstruct IBS project file from .tsv metadata file")
+    elif sys.argv[1] == "parse":
+        pathToUniprotXml = sys.argv[2]
+        uniprot2IBS_instance = uniprot2Info(pathToUniprotXml)
+    elif sys.argv[1] == "construct":
+        pathToInfo = sys.argv[2]
+        info2IbsProj_instance = info2IbsProj(pathToInfo)
+    else:
+        print("Invalid Command")
+
+

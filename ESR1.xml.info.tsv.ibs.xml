@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="IBS 1.0" mode="protein" width="800" height="600" rate="1.0">
+  <protein vertical="0" horizontal="0" locked="true">
+    <dash>1</dash>
+    <id>Estrogen receptor</id>
+    <start direction="Down">1</start>
+    <end direction="Down">595</end>
+    <height size="12" color="128,128,128" colorline="0,0,0">25</height>
+    <dash>false</dash>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <textfont />
+        <component type="domain">
+    <start direction="Up">311</start>
+    <end direction="Up">547</end>
+    <name direction="Down" size="12" color="153,0,51" colortext="0,0,0" colorline="0,0,0">NR LBD</name>
+    <high>10</high>
+    <shapetype>Rectangle</shapetype>
+    <strokesize>1</strokesize>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <rotationAngle>0</rotationAngle>
+    <dash>false</dash>
+    <leftdash>false</leftdash>
+    <rightdash>false</rightdash>
+    <id>Domain1</id>
+    <textfont />
+</component>
+        <component type="domain">
+    <start direction="Up">185</start>
+    <end direction="Up">250</end>
+    <name direction="Down" size="12" color="153,0,51" colortext="0,0,0" colorline="0,0,0">Nuclear receptor</name>
+    <high>10</high>
+    <shapetype>Rectangle</shapetype>
+    <strokesize>1</strokesize>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <rotationAngle>0</rotationAngle>
+    <dash>false</dash>
+    <leftdash>false</leftdash>
+    <rightdash>false</rightdash>
+    <id>Domain2</id>
+    <textfont />
+</component>
+        <component type="site">
+    <position show="false">39</position>
+    <text deltax="300" deltay="50" size="11" color="239,195,38" colortext="0,0,0" colorline="0,0,0">39</text>
+    <strokesize>1</strokesize>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <centerx>39</centerx>
+    <centery>50</centery>
+    <wide>30</wide>
+    <high>30</high>
+    <rotationAngle>0</rotationAngle>
+    <shapetype>Circle</shapetype>
+    <dash>false</dash>
+    <textfont />
+    <id>Site3</id>
+</component>
+        <component type="site">
+    <position show="false">43</position>
+    <text deltax="300" deltay="50" size="11" color="239,195,38" colortext="0,0,0" colorline="0,0,0">43</text>
+    <strokesize>1</strokesize>
+    <gradient>Null</gradient>
+    <texture>00000_0.jpg</texture>
+    <centerx>43</centerx>
+    <centery>50</centery>
+    <wide>30</wide>
+    <high>30</high>
+    <rotationAngle>0</rotationAngle>
+    <shapetype>Circle</shapetype>
+    <dash>false</dash>
+    <textfont />
+    <id>Site4</id>
+</component>}
+  </protein>
+</project>

@@ -1,0 +1,6 @@
+feature_name	description	Start_Position	End_Position	Loci_Position
+chain	Estrogen receptor	1	595	NA
+domain	NR LBD	311	547	NA
+DNA-binding region	Nuclear receptor	185	250	NA
+mutagenesis site	Impairs AF-1 transactivation.	NA	NA	39
+mutagenesis site	Impairs AF-1 transactivation.	NA	NA	43
