@@ -127,6 +127,8 @@ ESR1.xmlinfo.tsv.ibs.xml will be generated
 
 ### Use IBS to open and modify the generated figure
 
+[IBS download](http://ibs.biocuckoo.org/download.php)
+
 Open IBS-->Protein Mode-->File-->Open Project-->select ESR1.xml.info.tsv.ibs.xml
 
 ![fig2](https://github.com/Stella3055/uniprot2IBS/raw/master/assert/fig2.png)
