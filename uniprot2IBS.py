@@ -101,7 +101,7 @@ class info2IbsProj(object):
         chain["components"] = []
 
         compDf = self.df[self.df.feature_name != "chain"]
-        for index, row in compDf.iterrows():
+        for _, row in compDf.iterrows():
             if pd.isnull(row.Loci_Position):
                 chain["components"].append(self.renderDomain(row))
             else:
