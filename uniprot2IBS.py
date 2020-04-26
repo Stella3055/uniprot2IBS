@@ -4,6 +4,7 @@ import xml.etree.ElementTree as et
 from collections import OrderedDict
 import sys
 
+
 class uniprot2Info(object):
     def __init__(self, pathToUniprotXml):
         self.inPath = pathToUniprotXml
@@ -30,11 +31,11 @@ class uniprot2Info(object):
                             posLoci = subChildElem.get("position")
             featureList.append([
                 features.get("type"),
-                features.get("description", default = "NA"),
+                features.get("description", default="NA"),
                 posStart,
                 posEnd,
                 posLoci
-                ])
+            ])
         header = "\t".join([
             "feature_name",
             "description",
@@ -62,7 +63,7 @@ class info2IbsProj(object):
         return
 
     def importInfo(self):
-        self.df=pd.read_table(self.pathToInfo)
+        self.df = pd.read_table(self.pathToInfo)
         return
 
     def importTemplates(self):
@@ -115,9 +116,11 @@ class info2IbsProj(object):
             output.write(self.renderXml())
         return
 
+
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        print("Useage:\t\tuniprot2IBS [command] [filename]\nCommands:\n- parse:\textract protein metadata into .tsv file\n- construct:\tconstruct IBS project file from .tsv metadata file")
+        print(
+            "Useage:\t\tuniprot2IBS [command] [filename]\nCommands:\n- parse:\textract protein metadata into .tsv file\n- construct:\tconstruct IBS project file from .tsv metadata file")
     elif sys.argv[1] == "parse":
         pathToUniprotXml = sys.argv[2]
         uniprot2IBS_instance = uniprot2Info(pathToUniprotXml)
@@ -126,5 +129,4 @@ if __name__ == "__main__":
         info2IbsProj_instance = info2IbsProj(pathToInfo)
     else:
         print("Invalid Command")
-
 
